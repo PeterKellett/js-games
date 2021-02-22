@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block extra_css %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/memory-game.css') }}">
+{% endblock %}
+{% block content %} 
+<div class="container">
+    <h3>Score:<span id="result"></span></h3>
+
+    <div class="grid">
+        
+    </div>
+</div>    
+
+
+<script src="{{ url_for('static', filename='js/memory-game.js') }}"></script>
+
+{% endblock %}
